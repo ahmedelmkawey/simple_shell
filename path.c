@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * get_path -  PATH of the enviroment 
+ * get_path -  PATH of the enviromen
  * Return: Pointer of PATH
  */
 
