@@ -5,7 +5,6 @@
  * @argv: the array of string
  * Return: exit
  */
-
 int execute(char **argv)
 {
 	pid_t id;
@@ -14,7 +13,6 @@ int execute(char **argv)
 
 	if (argv == NULL || *argv == NULL)
 		return (status);
-
 	if (check_for_builtin(argv))
 		return (status);
 	id = fork();
@@ -23,10 +21,8 @@ int execute(char **argv)
 		_puterror("fork");
 		return (1);
 	}
-
 	if (id == -1)
 		perror(argv[0]), free_tokens(argv), free_last_input();
-
 	if (id == 0)
 	{
 		envp[0] = get_path();
