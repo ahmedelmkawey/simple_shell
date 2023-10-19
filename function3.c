@@ -65,7 +65,7 @@ char *_strstr(char *haystack, char *needle)
 
 int _putchar(char c)
 {
-        return (write(1, &c, 1));
+	return (write(1, &c, 1));
 }
 
 /**
@@ -77,14 +77,14 @@ int _putchar(char c)
 
 char *_strcat(char *dest, const char *src)
 {
-        char *ch = dest;
+	char *ch = dest;
 
-        while (*dest)
-                dest++;
-        while (*src)
-                *dest++ = *src++;
-        *dest = *src;
-        return (ch);
+	while (*dest)
+		dest++;
+	while (*src)
+		*dest++ = *src++;
+	*dest = *src;
+	return (ch);
 }
 
 
@@ -98,9 +98,9 @@ char *_strcat(char *dest, const char *src)
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-        unsigned int x;
+	unsigned int x;
 
-        for (x = 0; x < n; x++)
-                dest[x] = src[x];
-        return (dest);
+	for (x = 0; x < n; x++)
+		dest[x] = src[x];
+	return (dest);
 }
