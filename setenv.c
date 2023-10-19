@@ -45,7 +45,7 @@ int shell_setenv(char **args)
 	ch = args[1];
 	val = args[2];
 
-	if (setenv(name, value, 1) != 0)
+	if (setenv(name, val, 1) != 0)
 	{
 		_puterror("setenv");
 		return (-1);
