@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * prompt_check - handling prompt on
+ * prompt - handling prompt on
  * Return: nothing
  */
 
