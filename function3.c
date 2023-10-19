@@ -10,15 +10,15 @@
 
 char *_strchr(char *s, char c)
 {
-        while (*s != '\0')
-        {
-                if (*s == c)
-                        return (s);
-                s++;
-        }
-        if (*s == c)
-                return (s);
-        return (NULL);
+	while (*s != '\0')
+	{
+		if (*s == c)
+			return (s);
+		s++;
+	}
+	if (*s == c)
+		return (s);
+	return (NULL);
 }
 
 
@@ -31,29 +31,29 @@ char *_strchr(char *s, char c)
 
 char *_strstr(char *haystack, char *needle)
 {
-        int a;
+	int a;
 
-        for (a = 0; haystack[a] != '\0'; a++)
-        {
-                if (haystack[a] == needle[0])
-                {
-                        int b;
+	for (a = 0; haystack[a] != '\0'; a++)
+	{
+		if (haystack[a] == needle[0])
+		{
+			int b;
 
-                        for (b = 0; needle[b] != '\0'; b++)
-                        {
-                                if (haystack[a + b] != needle[b])
-                                {
-                                        break;
-                                }
-                        }
+			for (b = 0; needle[b] != '\0'; b++)
+			{
+				if (haystack[a + b] != needle[b])
+				{
+					break;
+				}
+			}
 
-                        if (needle[b] == '\0')
-                        {
-                                return (&haystack[a]);
-                        }
-                }
-        }
-        return (NULL);
+			if (needle[b] == '\0')
+			{
+				return (&haystack[a]);
+			}
+		}
+	}
+	return (NULL);
 }
 
 
