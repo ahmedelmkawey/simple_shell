@@ -31,7 +31,7 @@ void handle_sigint(int sig)
 
 
 /**
- * handle_sigquit -for Signal handler 
+ * handle_sigquit - for Signal handler
  * @sig: Signal of numbers
  * Return: succes
  */
