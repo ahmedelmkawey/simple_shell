@@ -15,12 +15,12 @@ char *get_input(void)
 	ssize_t nread;
 
 	do {
-		prompt();
+		if (isatty(STDIN_FILENO))
+			prompt();
 		nread = getline(&in, &input_size, stdin);
 		if (nread == -1)
 		{
 			free(in);
-			_puts("\n");
 			return (NULL);
 		}
 

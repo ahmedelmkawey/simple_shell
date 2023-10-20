@@ -46,7 +46,7 @@ int shell_unsetenv(char **args);
 char **tokenize(char *str, const char *delim);
 char **tokenize_input(char *input);
 char *find_in_path(char *command);
-int execute(char **args);
+int execute(char **argv);
 char *get_path(void);
 char *_getenv(const char *name);
 void _puts(char *str);
