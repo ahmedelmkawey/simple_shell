@@ -2,6 +2,13 @@
 #define _SHELL_H_
 #define _GNU_SOURCE
 
+#define PATH_MAX_LENGTH 4096
+#define PATH_SEPARATOR ":"
+#define PROMPT "$ "
+#define MAX_TOKENS 1024
+#define BUFFER_SIZE 1024
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -64,10 +71,5 @@ int _strncmp(const char *s1, const char *s2, size_t n);
 char *_strdup(const char *);
 char *_memcpy(char *dest, char *src, unsigned int n);
 
-#define PATH_MAX_LENGTH 4096
-#define PATH_SEPARATOR ":"
-#define PROMPT "$ "
-#define MAX_TOKENS 1024
-#define BUFFER_SIZE 1024
 
 #endif
